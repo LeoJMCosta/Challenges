@@ -24,7 +24,6 @@ monthly_challenges = {
 def index(request):
     list_items = ''
     months = list(monthly_challenges.keys())
-
     for month in months:
         capitalized_month = month.capitalize()
         month_path = reverse('month-challenge', args=[month])
